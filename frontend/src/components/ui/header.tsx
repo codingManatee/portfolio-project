@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Download } from "lucide-react";
 import { Button } from "./button";
+import { ModeToggle } from "./mode-toggle";
 
 export default function Header() {
   const handleOnclick = () => {
@@ -36,11 +37,12 @@ export default function Header() {
             </a>
           </nav>
         </div>
-        <div className="flex items-center space-x-4 ml-auto">
+        <div className="hidden md:flex space-x-4 ml-auto">
           <Button onClick={handleOnclick} variant="outline">
             <Download />
             Download Resume
           </Button>
+          <ModeToggle />
         </div>
       </div>
     </header>
