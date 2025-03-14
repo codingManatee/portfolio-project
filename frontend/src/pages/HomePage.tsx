@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
+import ContactForm from "@/components/ui/contact-form";
 import Header from "@/components/ui/header";
+import ProjectCard from "@/components/ui/project-card";
+import TechStack from "@/components/ui/tech-stack";
 import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 const HomePage = () => {
@@ -48,20 +51,20 @@ const HomePage = () => {
         </section>
 
         <section id="projects" className="py-12 md:py-24 lg:py-32">
-          <div className=" px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
+          <div className="px-4 md:px-6">
+            <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl mb-12 text-center">
               Projects
             </h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {/* <ProjectCard
-                title="E-commerce Platform"
-                description="A full-stack e-commerce platform built with Next.js, Prisma, and Stripe integration."
+              <ProjectCard
+                title="HMPIS"
+                description="A full-stack medicine management platform built with Next.js, NestJS, and PostgreSQL."
                 image="/placeholder.svg?height=400&width=600"
                 link="https://github.com"
-                tags={["Next.js", "Prisma", "Stripe"]}
+                tags={["Next.js", "NestJS", "PostgreSQL"]}
               />
               <ProjectCard
-                title="Task Management App"
+                title="Pic-keeper App"
                 description="A real-time task management application with team collaboration features."
                 image="/placeholder.svg?height=400&width=600"
                 link="https://github.com"
@@ -73,7 +76,7 @@ const HomePage = () => {
                 image="/placeholder.svg?height=400&width=600"
                 link="https://github.com"
                 tags={["OpenAI", "Next.js", "TailwindCSS"]}
-              /> */}
+              />
             </div>
           </div>
         </section>
@@ -83,7 +86,7 @@ const HomePage = () => {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
               Tech Stack
             </h2>
-            {/* <TechStack /> */}
+            <TechStack />
           </div>
         </section>
 
@@ -93,11 +96,27 @@ const HomePage = () => {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
                 Get in Touch
               </h2>
-              {/* <ContactForm /> */}
+              <ContactForm />
             </div>
           </div>
         </section>
       </main>
+
+      <footer className="border-t">
+        <div className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6">
+          <p className="text-xs text-gray-500 dark:text-gray-400">
+            © 2024 Pattapon.dev. All rights reserved.
+          </p>
+          <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+            <Link className="text-xs hover:underline underline-offset-4" to="#">
+              Terms of Service
+            </Link>
+            <Link className="text-xs hover:underline underline-offset-4" to="#">
+              Privacy
+            </Link>
+          </nav>
+        </div>
+      </footer>
     </div>
   );
 };
