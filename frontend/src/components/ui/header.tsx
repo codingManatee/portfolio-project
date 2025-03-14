@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
+import { Download } from "lucide-react";
+import { Button } from "./button";
 
 export default function Header() {
+  const handleOnclick = () => {
+    console.log("click");
+  };
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur dark:border-gray-800 dark:bg-gray-900/95">
       <div className="container mx-auto flex h-14 items-center px-4">
@@ -32,9 +37,10 @@ export default function Header() {
           </nav>
         </div>
         <div className="flex items-center space-x-4 ml-auto">
-          <button className="inline-flex items-center justify-center rounded-md border border-gray-200 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 dark:border-gray-800 dark:text-gray-50 dark:hover:bg-gray-800">
-            Resume
-          </button>
+          <Button onClick={handleOnclick} variant="outline">
+            <Download />
+            Download Resume
+          </Button>
         </div>
       </div>
     </header>

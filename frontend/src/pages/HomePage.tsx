@@ -10,7 +10,7 @@ const HomePage = () => {
     <div className="min-h-screen bg-background">
       <Header />
 
-      <main className="">
+      <main>
         <section id="about" className="py-12 md:py-24 lg:py-32">
           <div className="text-center space-y-4">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
