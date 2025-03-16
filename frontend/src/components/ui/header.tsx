@@ -8,7 +8,7 @@ export default function Header() {
     console.log("click");
   };
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur dark:border-gray-800 dark:bg-gray-900/95">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-14 items-center px-4">
         <div className="mr-4 hidden md:flex">
           <Link className="mr-6 flex items-center space-x-2" to="/">
