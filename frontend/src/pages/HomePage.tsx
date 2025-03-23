@@ -10,12 +10,12 @@ const HomePage = () => {
       <Header />
 
       <main>
-        <section id="about" className="py-12 md:py-24 lg:py-32">
+        <section id="about" className="px-12 py-12 md:py-24 lg:py-32">
           <div className="text-center space-y-4">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-              Hi, I'm Pattapon Vichanukroh
+              Hi, I'm Pattapon Vichanukroh 👋
             </h1>
-            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+            <p className="text-sm mx-auto max-w-[700px] text-gray-500 sm:text-based md:text-lg lg:text-xl dark:text-gray-400">
               I'm a Computer Engineering senior at Chulalongkorn University with
               experience in software development, cloud infrastructure, and data
               engineering. Through internships at SalaryHero, TechX, and SCB

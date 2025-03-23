@@ -10,12 +10,12 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-14 items-center px-4">
+        <Link className="mr-6 flex items-center space-x-2" to="/">
+          <span className=" font-bold sm:inline-block text-gray-900 dark:text-white">
+            Pattapon.dev
+          </span>
+        </Link>
         <div className="mr-4 hidden md:flex">
-          <Link className="mr-6 flex items-center space-x-2" to="/">
-            <span className="hidden font-bold sm:inline-block text-gray-900 dark:text-white">
-              Pattapon.dev
-            </span>
-          </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <a
               href="#about"
@@ -37,7 +37,7 @@ export default function Header() {
             </a>
           </nav>
         </div>
-        <div className="hidden md:flex space-x-4 ml-auto">
+        <div className=" flex space-x-4 ml-auto">
           <a href="Resume - 2025.pdf" download="Resume - 2025.pdf">
             <Button onClick={handleOnclick} variant="outline">
               <Download />
