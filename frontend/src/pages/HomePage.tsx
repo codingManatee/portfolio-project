@@ -10,48 +10,54 @@ const HomePage = () => {
       <Header />
 
       <main>
-        <section id="about" className="px-12 py-12 md:py-24 lg:py-32">
-          <div className="text-center space-y-4">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-              Hi, I'm Pattapon Vichanukroh 👋
-            </h1>
-            <p className="text-sm mx-auto max-w-[700px] text-gray-500 sm:text-based md:text-lg lg:text-xl dark:text-gray-400">
-              I'm a Computer Engineering senior at Chulalongkorn University with
-              experience in software development, cloud infrastructure, and data
-              engineering. Through internships at SalaryHero, TechX, and SCB
-              DBank, I’ve built scalable web apps, optimized CI/CD pipelines,
-              and developed predictive models. Passionate about problem-solving
-              and innovation, I’m eager to contribute to impactful projects.
-            </p>
+        <section id="about" className="px-6 sm:px-12 py-6 sm:py-8 md:py-24">
+          <div className="place-content-center flex flex-col items-center space-y-2 lg:flex-row space-x-0 lg:space-x-8">
+            <div className="max-w-sm">
+              <img src="profile-pic.jpg" alt="profile-image" />
+            </div>
+            <div className="place-content-center text-center space-y-3.5 lg:space-y-4  ">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                Hi, I'm Pattapon Vichanukroh 👋
+              </h1>
+              <p className="text-sm mx-auto  text-gray-500 max-w-[700px] sm:text-based md:text-lg lg:text-xl dark:text-gray-400">
+                I'm a Computer Engineering senior at Chulalongkorn University
+                with experience in software development, cloud infrastructure,
+                and data engineering. Through internships at SalaryHero, TechX,
+                and SCB DBank, I’ve built scalable web apps, optimized CI/CD
+                pipelines, and developed predictive models. Passionate about
+                problem-solving and innovation, I’m eager to contribute to
+                impactful projects.
+              </p>
 
-            <div className="space-x-4">
-              <Link to="https://github.com/codingManatee" target="_blank">
-                <Button variant="outline" size="icon">
-                  <Github className="h-4 w-4" />
-                  <span className="sr-only">GitHub</span>
-                </Button>
-              </Link>
-              <Link
-                to="https://www.linkedin.com/in/pattapon-vichanukroh-45868229b"
-                target="_blank"
-              >
-                <Button variant="outline" size="icon">
-                  <Linkedin className="h-4 w-4" />
-                  <span className="sr-only">LinkedIn</span>
-                </Button>
-              </Link>
-              <Link to="https://www.instagram.com/pttzx_/" target="_blank">
-                <Button variant="outline" size="icon">
-                  <Instagram className="h-4 w-4" />
-                  <span className="sr-only">Instagram</span>
-                </Button>
-              </Link>
-              <Link to="mailto:pattapon.vichanukroh@outlook.com">
-                <Button variant="outline" size="icon">
-                  <Mail className="h-4 w-4" />
-                  <span className="sr-only">Email</span>
-                </Button>
-              </Link>
+              <div className="space-x-4">
+                <Link to="https://github.com/codingManatee" target="_blank">
+                  <Button variant="outline" size="icon">
+                    <Github className="h-4 w-4" />
+                    <span className="sr-only">GitHub</span>
+                  </Button>
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/in/pattapon-vichanukroh-45868229b"
+                  target="_blank"
+                >
+                  <Button variant="outline" size="icon">
+                    <Linkedin className="h-4 w-4" />
+                    <span className="sr-only">LinkedIn</span>
+                  </Button>
+                </Link>
+                <Link to="https://www.instagram.com/pttzx_/" target="_blank">
+                  <Button variant="outline" size="icon">
+                    <Instagram className="h-4 w-4" />
+                    <span className="sr-only">Instagram</span>
+                  </Button>
+                </Link>
+                <Link to="mailto:pattapon.vichanukroh@outlook.com">
+                  <Button variant="outline" size="icon">
+                    <Mail className="h-4 w-4" />
+                    <span className="sr-only">Email</span>
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
