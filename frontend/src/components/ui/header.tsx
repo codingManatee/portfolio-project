@@ -38,10 +38,12 @@ export default function Header() {
           </nav>
         </div>
         <div className="hidden md:flex space-x-4 ml-auto">
-          <Button onClick={handleOnclick} variant="outline">
-            <Download />
-            Download Resume
-          </Button>
+          <a href="Resume - 2025.pdf" download="Resume - 2025.pdf">
+            <Button onClick={handleOnclick} variant="outline">
+              <Download />
+              Download Resume
+            </Button>
+          </a>
           <ModeToggle />
         </div>
       </div>

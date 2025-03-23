@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button";
-import ContactForm from "@/components/ui/contact-form";
 import Header from "@/components/ui/header";
 import ProjectCard from "@/components/ui/project-card";
 import TechStack from "@/components/ui/tech-stack";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
@@ -14,33 +13,40 @@ const HomePage = () => {
         <section id="about" className="py-12 md:py-24 lg:py-32">
           <div className="text-center space-y-4">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-              Full Stack Developer
+              Hi, I'm Pattapon Vichanukroh
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-              Building digital experiences with modern technologies. Focused on
-              creating elegant solutions to complex problems.
+              I'm a Computer Engineering senior at Chulalongkorn University with
+              experience in software development, cloud infrastructure, and data
+              engineering. Through internships at SalaryHero, TechX, and SCB
+              DBank, I’ve built scalable web apps, optimized CI/CD pipelines,
+              and developed predictive models. Passionate about problem-solving
+              and innovation, I’m eager to contribute to impactful projects.
             </p>
 
             <div className="space-x-4">
-              <Link to="https://github.com" target="_blank">
+              <Link to="https://github.com/codingManatee" target="_blank">
                 <Button variant="outline" size="icon">
                   <Github className="h-4 w-4" />
                   <span className="sr-only">GitHub</span>
                 </Button>
               </Link>
-              <Link to="https://linkedin.com" target="_blank">
+              <Link
+                to="https://www.linkedin.com/in/pattapon-vichanukroh-45868229b"
+                target="_blank"
+              >
                 <Button variant="outline" size="icon">
                   <Linkedin className="h-4 w-4" />
                   <span className="sr-only">LinkedIn</span>
                 </Button>
               </Link>
-              <Link to="https://twitter.com" target="_blank">
+              <Link to="https://www.instagram.com/pttzx_/" target="_blank">
                 <Button variant="outline" size="icon">
-                  <Twitter className="h-4 w-4" />
-                  <span className="sr-only">Twitter</span>
+                  <Instagram className="h-4 w-4" />
+                  <span className="sr-only">Instagram</span>
                 </Button>
               </Link>
-              <Link to="mailto:hello@example.com">
+              <Link to="mailto:pattapon.vichanukroh@outlook.com">
                 <Button variant="outline" size="icon">
                   <Mail className="h-4 w-4" />
                   <span className="sr-only">Email</span>
@@ -57,25 +63,25 @@ const HomePage = () => {
             </h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
-                title="HMPIS"
-                description="A full-stack medicine management platform built with Next.js, NestJS, and PostgreSQL."
-                image="/placeholder.svg?height=400&width=600"
+                title="HMPIS - Herbal Medicine Product Inventory System"
+                description="A medicine management platform built with Next.js, NestJS, and PostgreSQL."
+                image="/HMPIS.jpg"
                 link="https://github.com"
                 tags={["Next.js", "NestJS", "PostgreSQL"]}
               />
               <ProjectCard
-                title="Pic-keeper App"
+                title="PIC-KEEPER"
                 description="A real-time task management application with team collaboration features."
-                image="/placeholder.svg?height=400&width=600"
+                image="/PIC-KEEPER.jpg"
                 link="https://github.com"
-                tags={["React", "Node.js", "Socket.io"]}
+                tags={["React", "TailwindCSS", "Express", "Websocket"]}
               />
               <ProjectCard
-                title="AI Chat Interface"
-                description="An AI-powered chat interface with natural language processing capabilities."
-                image="/placeholder.svg?height=400&width=600"
+                title="Bucket-Counter Project"
+                description="A real-time object detection with monitoring and logging web console."
+                image="/BUCKET-COUNTER.jpg"
                 link="https://github.com"
-                tags={["OpenAI", "Next.js", "TailwindCSS"]}
+                tags={["YoloV11", "OpenCV", "Next.js", "TailwindCSS"]}
               />
             </div>
           </div>
@@ -89,7 +95,7 @@ const HomePage = () => {
             <TechStack />
           </div>
         </section>
-
+        {/* 
         <section id="contact" className="py-12 md:py-24 lg:py-32">
           <div className="px-4 md:px-6">
             <div className="mx-auto max-w-2xl">
@@ -99,7 +105,7 @@ const HomePage = () => {
               <ContactForm />
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
 
       <footer className="border-t">
@@ -108,12 +114,12 @@ const HomePage = () => {
             © 2024 Pattapon.dev. All rights reserved.
           </p>
           <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-            <Link className="text-xs hover:underline underline-offset-4" to="#">
+            {/* <Link className="text-xs hover:underline underline-offset-4" to="#">
               Terms of Service
             </Link>
             <Link className="text-xs hover:underline underline-offset-4" to="#">
               Privacy
-            </Link>
+            </Link> */}
           </nav>
         </div>
       </footer>
